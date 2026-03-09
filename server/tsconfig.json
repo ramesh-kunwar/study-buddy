@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",          // what JS version to compile down to
+    "module": "commonjs",        // output format Node.js expects
+    "lib": ["ES2020"],           // built-in type definitions to include
+    "outDir": "./dist",          // where compiled JS goes
+    "rootDir": "./",             // where TypeScript source lives
+    "strict": true,              // enable all strict type checks
+    "esModuleInterop": true,     // allow default imports from CJS packages
+    "skipLibCheck": true,        // skip type checks on .d.ts files in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true    // allow importing .json files
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
